@@ -1,0 +1,50 @@
+@media only screen and (max-width: 1223px) and (min-width: 1024px) {
+  .card-building {
+    width: 33.33333%;
+  }
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .card-building {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .container {
+    padding: 0 15px;
+  }
+  .title-inner,
+  .secondary-header {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .card-building {
+    padding: 0 4px;
+  }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 480px) {
+  .card-building {
+    width: 50%;
+    margin-bottom: 10px;
+  }
+  .obj {
+    height: 312px;
+  }
+  .card-image {
+    height: 182px;
+  }
+  .logo-builder {
+    width: 24px;
+    top: -12px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .card-building {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
