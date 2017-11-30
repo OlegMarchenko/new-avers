@@ -36,7 +36,7 @@ $(document).ready(function () {
         $('.bb').slick({
             slidesToShow: 1,
             asNavFor: '.secondary-image',
-            arrows: false,
+            arrows: true,
             adaptiveHeight: true,
             fade: true
         });
@@ -48,4 +48,5 @@ $(document).ready(function () {
             top = $(id).offset().top;
         $('body,html').animate({scrollTop: top}, 1500);
     });
+
 });

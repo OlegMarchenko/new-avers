@@ -157,3 +157,30 @@
         border-right: 2px solid $brand-color;
     }
 }
+
+.bb {
+    .slick-prev,
+    .slick-next {
+        width: 50%;
+        height: 100%;
+        border-radius: inherit;
+        background: transparent;
+        box-shadow: none;
+        transition: .5s all;
+        &::before {
+            content: none;
+            top: 50%;
+            transition: .5s all;
+            border-color: white;
+        }
+        &:hover::before {
+            content: '';
+        }
+    }
+    .slick-prev {
+        left: 0;
+    }
+    .slick-next {
+        right: 0;
+    }
+}

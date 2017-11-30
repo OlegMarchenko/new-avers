@@ -121,6 +121,7 @@ body {
   display: inline-block;
   margin: 10px 0 10px 10px;
   width: 125px;
+  outline: none;
   img {
     max-height: 93px;
     min-height: 93px;
@@ -128,14 +129,14 @@ body {
 }
 
 .gallery-holder {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 /*Right Section Styles*/
 
 .section-info {
   display: flex;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .right-section {
@@ -144,13 +145,19 @@ body {
   box-shadow: 0 0 18px 0 rgba(50, 50, 50, 0.55);
   border-radius: 5px;
   background: snow;
+  align-self: flex-start;
 }
 
 .builder-icon {
   padding-top: 5px;
   transition: .4s all ease-in-out;
+  max-width: 454px;
+  max-height: 353px;
+  overflow: hidden;
  img {
    border-radius: 5px;
+   display: block;
+   margin: 0 auto;
  }
   &:hover {
     transform: scale(1.02);
@@ -270,5 +277,10 @@ th {
 
 .list-flats {
   padding: 0 0 0 15px;
+  margin-bottom: 100px;
+}
+
+.title-desc {
+  margin-bottom: 20px;
 }
 

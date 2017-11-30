@@ -6,6 +6,7 @@
   padding: 0 10px;
   position: relative;
 }
+
 .plus {
   position: absolute;
   top: 0;
@@ -15,11 +16,12 @@
   z-index: 5;
   display: none;
 }
+
 .obj {
   background: #fff;
   border-radius: 3px;
   height: 410px;
-  box-shadow: 0 1px 2px rgba(5,5,6,0.1);
+  box-shadow: 0 1px 2px rgba(5, 5, 6, 0.1);
 
 }
 
@@ -37,9 +39,12 @@
   margin: 0;
   > div {
     position: relative;
+    width: 100%;
+    height: 100%;
     &:nth-child(2) {
       img {
         width: 100%;
+        height: 100%;
       }
     }
   }
@@ -80,8 +85,9 @@
   left: 0;
   width: 100%;
   display: block;
-  background-image: linear-gradient(rgba(0,0,0,0),#000);
+  background-image: linear-gradient(rgba(0, 0, 0, 0), #000);
 }
+
 .image-title-inner {
   padding: 0 16px 16px;
 }
@@ -105,13 +111,20 @@
 }
 
 .distance-to-metro {
-  padding-left: 15px;
+  padding-left: 2px;
   font-size: 14px;
 
 }
 
 .secondary-header {
   display: flex;
+  flex-direction: column;
+  > div {
+    display: flex;
+    + div {
+      margin-top: 5px;
+    }
+  }
 }
 
 .card-description {
@@ -160,5 +173,170 @@
   padding: 0 16px 16px 16px;
   a {
     color: $blue;
+  }
+}
+
+/*Cards-flat*/
+
+.card-flat {
+  display: flex;
+  padding: 10px;
+  border: 5px solid transparent;
+  background: linear-gradient(white, white) padding-box,
+  repeating-linear-gradient(-45deg, $brand-color 0,$brand-color 12.5%, transparent 0, transparent 25%,
+                  $blue 0, $blue 37.5%, transparent 0, transparent 50%) 0 / 6em 6em;
+}
+
+.card-left {
+  min-width: 30%;
+  flex-basis: 30%;
+}
+
+.card-image-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  a {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: .5s all;
+    background: rgba(0, 0, 0, .5);
+  }
+  &:hover {
+    a {
+      opacity: 1;
+    }
+  }
+  img {
+    min-height: 100%;
+  }
+}
+
+.card-right {
+  flex-grow: 1;
+  display: flex;
+}
+.card-right-desc {
+  min-width: 65%;
+  flex-basis: 65%;
+  padding-left: 20px;
+  span {
+    font-size: 16px;
+    font-weight: 700;
+    color: #444;
+  }
+  > div {
+    display: flex;
+    padding: 5px 0;
+    border-bottom: 1px dashed $brand-color;
+    justify-content: space-between;
+    &:first-child {
+      padding-top: 0;
+    }
+    &:last-child {
+      padding-bottom: 0;
+      border: none;
+    }
+    > div {
+      padding-left: 10%;
+    }
+  }
+  p {
+    margin-bottom: 0;
+  }
+  a {
+    font-weight: 500;
+    transition: .2s all;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+.card-right-price {
+  min-width: 35%;
+  flex-basis: 35%;
+  padding-left: 20px;
+}
+.card-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1f1f1f;
+}
+.card-phone {
+  > div {
+    display: flex;
+    flex-direction: column;
+    a {
+      position: relative;
+    }
+  }
+}
+
+.card-right-price {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.price-flat {
+  .title-price {
+    font-weight: 700;
+    color: #444444;
+    font-size: 20px;
+  }
+  > div {
+    padding-bottom: 7px;
+    &:last-child {
+      padding-bottom: 15px;
+    }
+  }
+}
+
+.option-flat {
+  > div {
+    display: flex;
+    a {
+      padding: 0 0 10px 10px;
+      display: block;
+      font-size: 15px;
+      font-weight: 500;
+      color: #256799;
+    }
+  }
+}
+.flat-more-info {
+  a {
+    display: block;
+    background: linear-gradient(to right, #c0c0c0 0%,#631b35 100%);
+    //background: $brand-color;
+    color: #fff;
+    font-size: 22px;
+    padding: 10px 20px 10px 30px;
+    position: relative;
+    width: 80%;
+    text-transform: uppercase;
+    transition: background .4s ease;
+    &::before {
+      content: '';
+      position: absolute;
+      transform: translateY(-50%);
+      right: -47px;
+      top: 50%;
+      width: 0;
+      height: 0;
+      border-top: 23px solid transparent;
+      border-left: 44px solid $brand-color;
+      border-bottom: 23px solid transparent;
+    }
+    &:hover {
+      background-position: 206px;
+    }
   }
 }
