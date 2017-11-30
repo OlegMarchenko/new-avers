@@ -30,8 +30,22 @@ $(document).ready(function () {
 
     if($('.secondary-image').length) {
         $('.secondary-image').slick({
-            slidesToShow: 4
+            slidesToShow: 4,
+            asNavFor: '.bb',
+        });
+        $('.bb').slick({
+            slidesToShow: 1,
+            asNavFor: '.secondary-image',
+            arrows: false,
+            adaptiveHeight: true,
+            fade: true
         });
     }
 
+    $(".holder-similar-searches").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
 });
