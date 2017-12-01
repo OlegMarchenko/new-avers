@@ -125,6 +125,8 @@ body {
   img {
     max-height: 93px;
     min-height: 93px;
+    display: block;
+    margin: 0 auto;
   }
 }
 
@@ -196,6 +198,7 @@ th {
   padding: 10px;
   box-shadow: 0 0 18px 0 rgba(50, 50, 50, 0.55);
   border-radius: 5px;
+  flex-grow: 1;
 }
 
 .row-detail {
