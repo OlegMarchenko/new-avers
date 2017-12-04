@@ -17,6 +17,13 @@
       margin-bottom: 0;
     }
   }
+  .holder-flats {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .flat-more-info {
+    padding-bottom: 7px;
+  }
 }
 
 .optional {
@@ -50,4 +57,15 @@
 #map {
   width: 100%;
   height: 100%;
+}
+/*==================*/
+
+.flat-title-inner {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+  a {
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
 }

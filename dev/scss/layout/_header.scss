@@ -52,60 +52,253 @@
   }
 }
 
-.nav-opener {
-  position: relative;
-  width: 30px;
-  height: 30px;
-  font-size: 0;
-  line-height: 0;
-  float: right;
 
-  @include media('≥tablet') {
+/*STYLES FOR HEADER-BOTTOM*/
+
+.header-bottom {
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.navbar-nav {
+  display: flex;
+  padding: 0 6px;
+  margin: 0 -38px;
+  a {
+    font-family: 'montserratregular', sans-serif;
+    font-size: 14px;
+    color: #4c4c4c;
+    text-transform: uppercase;
+    display: block;
+    padding: 34px 5px 40px;
+    transition: all .5s ease 0s;
+    border-top: 3px solid transparent;
+    &:hover {
+      border-top: 3px solid $blue;
+    }
+
+  }
+  li {
+    position: relative;
+    list-style: none;
+    margin: 0 17px;
+     &:last-child a {
+       border-top: none;
+       &:hover {
+         border-top: transparent;
+       }
+     }
+  }
+  ul {
     display: none;
-  }
-
-  &:before,
-  &:after,
-  span {
-    @include animate(transform);
-    background: $black;
     position: absolute;
-    top: 16px;
-    left: 15%;
-    right: 15%;
-    height: 3px;
-    margin-top: -2px; 
+    top: 100%;
   }
+}
 
-  &:before,
-  &:after {
+.popup-menu {
+  &::before {
+    position: absolute;
+    content: '';
+    width: 7px;
+    height: 7px;
+    border-right: 1px solid #4c4c4c;
+    border-bottom: 1px solid #4c4c4c;
+    top: 65px;
+    left: 50%;
+    transform: rotate(45deg) translateX(-50%);
+    transition: all .5s ease 0s;
+  }
+  &:hover {
+    ul {
+      display: block;
+    }
+    &::before {
+      transform: rotate(225deg);
+    }
+  }
+}
+
+.dropdown {
+  border: 1px solid #e5e5e5;
+  background-color: #fff;
+  padding-left: 0;
+  width: 250%;
+  li {
+    border: none;
+    margin: 0 0 5px 0;
+  }
+  a {
+    padding: 7px 10px;
+    font-size: 14px;
+  }
+}
+
+.header {
+  position: relative;
+  z-index: 500;
+  background: #ffffff;
+  top: 95px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.logo {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  a {
+    display: block;
+    width: 170px;
+  }
+}
+.navbar {
+  width: 60%;
+}
+
+.top-header {
+  display: flex;
+}
+
+.middle-header {
+  padding: 15px 0;
+  background: #363636;
+}
+
+.advertisement {
+  align-self: center;
+  width: 20%;
+  position: relative;
+  > div {
+    padding-bottom: 10px;
+  }
+  > span {
+    font-size: 12px;
+    a {
+      color: #7e7e7e;
+      &:hover {
+        color: #4c4c4c;
+      }
+    }
+  }
+}
+
+.btn-advertisement {
+  padding: 7px 27px;
+  border: 1px solid #ccc;
+  border-radius: 40px;
+  color: #7e7e7e;
+  &:hover {
+    color: #4c4c4c;
+  }
+}
+
+
+input[type="number"] {
+  padding: 9px 24px 9px 7px;
+  width: 100%;
+  &::-webkit-input-placeholder {
+    color: #7e7e7e;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+form {
+  label {
+    display: block;
+    color: #fff;
+    font-weight: 300;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  > div {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.holder-mid-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input[type="button"] {
+  width: 38px;
+  height: 38px;
+  margin-left: -2px;
+  border: none;
+  background: #7e7e7e;
+  &:hover {
+    background: #7e7e7e;
+  }
+}
+
+.search-btn-holder {
+  position: relative;
+  i {
+    position: absolute;
     content: '';
     top: 10px;
+    left: 8px;
   }
-
-  &:after {
-    top: 22px;
-  }
-
   &:hover {
-    opacity: 0.9;
+    i {
+      fill: #7e7e7e;
+    }
   }
+}
 
-  .nav-active & {
-    span {
-      opacity: 0;
+.fixed-header {
+  z-index: 999;
+  width: 100%;
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  background: #fff;
+}
+
+.tooltip {
+  position: absolute;
+  .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #363636;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: -18px;
+    left: 15px;
+    margin-left: -60px;
+
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 1s;
+    &::after {
+      content: "";
+      position: absolute;
+      top: -10px;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: transparent transparent #363636 transparent;
     }
-
-    &:after,
-    &:before {
-      transform: rotate(45deg);
-      top: 16px;
-      left: 15%;
-      right: 15%;
-    }
-
-    &:after {
-      transform: rotate(-45deg);
+  }
+  &:hover {
+    .tooltiptext {
+      visibility: visible;
+      opacity: 1;
     }
   }
 }

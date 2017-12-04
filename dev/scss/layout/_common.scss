@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
 
-body {
-  background: $base-background-color;
-}
-
 .container {
   max-width: 1270px;
   margin: 0 auto;
@@ -40,24 +36,10 @@ body {
 }
 
 .caption-section {
-  > div {
-    padding-left: 25px;
-    position: relative;
-    margin-bottom: 15px;
-    font-size: 18px;
-    &::before {
-      position: absolute;
-      content: '';
-      width: 14px;
-      height: 14px;
-      background: $brand-color;
-      top: 50%;
-      left: 0;
-      transform: translateY(-50%);
-    }
-  }
   p {
     font-weight: 300;
+    color: #ffffff;
+    margin-bottom: 0;
   }
 }
 
