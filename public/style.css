@@ -1419,6 +1419,8 @@ input[type="button"] {
 
 .param-building-inner {
   padding: 15px 0 0 0; }
+  .param-building-inner table {
+    width: 100%; }
 
 .title-cell,
 .value-cell {
@@ -1518,6 +1520,8 @@ th {
   background: #ffffff;
   padding: 10px 0;
   border-top: 2px solid #f5f5f5; }
+  .footer .logo {
+    display: none; }
 
 .footer-top {
   display: -ms-flexbox;
