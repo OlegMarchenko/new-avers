@@ -25,7 +25,7 @@ gulp.task('webpack', (cb) => {
 const reloadPage = (cb) => {
 	browserSync.reload();
 	cb();
-}
+};
 
 // compile from sass to css
 gulp.task('allSass', () => {
