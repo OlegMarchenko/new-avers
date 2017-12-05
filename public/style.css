@@ -708,13 +708,20 @@ a {
   color: #fff; }
 
 .station-metro {
-  font-size: 14px; }
+  font-size: 14px;
+  max-width: calc(100% - 84px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
   .station-metro svg {
     margin-bottom: -4px; }
 
 .title-inner {
   padding-bottom: 5px;
-  font-size: 20px; }
+  font-size: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
 
 .distance-to-metro {
   padding-left: 2px;
@@ -1381,8 +1388,8 @@ input[type="button"] {
   width: 125px;
   outline: none; }
   .preview-image img {
-    max-height: 93px;
-    min-height: 93px;
+    height: 93px;
+    width: 100%;
     display: block;
     margin: 0 auto; }
 
