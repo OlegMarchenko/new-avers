@@ -32,6 +32,9 @@ $(document).ready(function () {
         $('.secondary-image').slick({
             slidesToShow: 4,
             asNavFor: '.bb',
+            infinite: true,
+            focusOnSelect: true,
+            speed: 800
         });
         $('.bb').slick({
             slidesToShow: 1,
