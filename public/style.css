@@ -725,7 +725,9 @@ a {
 
 .distance-to-metro {
   padding-left: 2px;
-  font-size: 14px; }
+  font-size: 14px;
+  -ms-flex-item-align: end;
+      align-self: flex-end; }
 
 .secondary-header {
   display: -ms-flexbox;
@@ -734,7 +736,9 @@ a {
       flex-direction: column; }
   .secondary-header > div {
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center; }
     .secondary-header > div + div {
       margin-top: 5px; }
 
@@ -1495,7 +1499,7 @@ th {
   margin-bottom: -7px; }
 
 .distance svg {
-  margin-bottom: -4px; }
+  margin-bottom: -2px; }
 
 /*Section Description*/
 .description-section {

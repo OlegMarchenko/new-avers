@@ -120,6 +120,7 @@
 .distance-to-metro {
   padding-left: 2px;
   font-size: 14px;
+  align-self: flex-end;
 
 }
 
@@ -128,6 +129,7 @@
   flex-direction: column;
   > div {
     display: flex;
+    align-items: center;
     + div {
       margin-top: 5px;
     }
