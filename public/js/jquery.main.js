@@ -30,11 +30,13 @@ $(document).ready(function () {
 
     if($('.secondary-image').length) {
         $('.secondary-image').slick({
-            slidesToShow: 4,
-            asNavFor: '.bb',
+            slidesToShow: 5,
+            arrows: true,
             infinite: true,
-            focusOnSelect: true,
-            speed: 800
+            variableWidth: true,
+            asNavFor: '.bb',
+            speed: 800,
+            focusOnSelect: true
         });
         $('.bb').slick({
             slidesToShow: 1,
