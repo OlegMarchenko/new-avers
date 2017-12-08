@@ -1,23 +1,23 @@
-.btn {
+.btn-new {
   @include animate(background);
-  background: $btn-background;
-  color: $btn-color;
-  border: $btn-border;
-  padding: $btn-padding;
-  font-size: $btn-font-size;
-  line-height: $btn-line-height;
+  background: $btn-new-background;
+  color: $btn-new-color;
+  border: $btn-new-border;
+  padding: $btn-new-padding;
+  font-size: $btn-new-font-size;
+  line-height: $btn-new-line-height;
 
   &:hover {
-    background: $btn-hover-background;
-    color: $btn-hover-color;
+    background: $btn-new-hover-background;
+    color: $btn-new-hover-color;
   }
 }
 
-.btn-group {
+.btn-new-group {
   display: flex;
 
-  > .btn {
-    + .btn {
+  > .btn-new {
+    + .btn-new {
       border-left: 0;
     }
   }

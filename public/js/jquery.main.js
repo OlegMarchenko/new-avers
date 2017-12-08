@@ -28,26 +28,26 @@ $(document).ready(function () {
         });
     }
 
-    if($('.secondary-image').length) {
-        $('.secondary-image').slick({
+    if($('.secondary-image-new').length) {
+        $('.secondary-image-new').slick({
             slidesToShow: 5,
             arrows: true,
             infinite: true,
             variableWidth: true,
-            asNavFor: '.bb',
+            asNavFor: '.bb-new',
             speed: 800,
             focusOnSelect: true
         });
-        $('.bb').slick({
+        $('.bb-new').slick({
             slidesToShow: 1,
-            asNavFor: '.secondary-image',
+            asNavFor: '.secondary-image-new',
             arrows: true,
             adaptiveHeight: true,
             fade: true
         });
     }
 
-    $(".holder-similar-searches").on("click","a", function (event) {
+    $(".holder-similar-searches-new").on("click","a", function (event) {
         event.preventDefault();
         var id  = $(this).attr('href'),
             top = $(id).offset().top;

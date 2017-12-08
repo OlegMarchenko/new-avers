@@ -44,6 +44,14 @@ body {
 
 #wrapper {
   background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+main {
+  flex: 1 0 auto;
+  margin-top: 115px;
 }
 
 // adaptive images
@@ -51,6 +59,11 @@ img {
   max-width: 100%;
   height: auto;
   vertical-align: top;
+}
+
+html,
+body {
+  height: 100%;
 }
 
 // google map fix

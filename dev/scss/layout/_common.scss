@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
 
-.container {
+.container-new {
   max-width: 1270px;
   margin: 0 auto;
   padding: 0 30px;
 }
 
-.similar-searches-cities {
+.similar-searches-cities-new {
   margin: 20px 0 40px 0;
   .similar-searches-title {
     font-size: 14px;
@@ -15,16 +15,16 @@
   }
 }
 
-.holder-similar-searches {
+.holder-similar-searches-new {
   display: flex;
-  .similar-searches-item {
+  .similar-searches-item-new {
     margin: 20px 15px 0 0;
     transition: all .5s ease;
     &:hover {
       transform: scale(1.2);
     }
   }
-  .similar-searches-link {
+  .similar-searches-link-new {
     font-size: 14px;
     padding: 7px 12px;
     background: $white;
@@ -35,7 +35,7 @@
   }
 }
 
-.caption-section {
+.caption-section-new {
   p {
     font-weight: 300;
     color: #ffffff;
@@ -44,41 +44,27 @@
 }
 
 
-
-
-
-/*=================*/
-.v-header {
-  height: 450px;
-  margin-top: 100px;
-  background: url("//storage.googleapis.com/bd-ua-01/background_images/1_35.jpg") bottom center fixed no-repeat;
-  background-size: cover;
-}
-/*=================*/
-
-/*MORE INFORMATION PAGE*/
-
-.page-header {
+.page-header-new {
   margin-top: 25px;
 }
 
-.section-info {
+.section-info-new {
   margin-top: 40px;
 }
 
-.title-header {
+.title-header-new {
   font-size: 24px;
   font-weight: 500;
   color: $blue;
 }
 
-.left-section {
+.left-section-new {
   width: 60%;
   padding: 0 15px;
 }
 
 
-.bb {
+.bb-new {
   position: relative;
   overflow: hidden;
   border-radius: 5px 5px 0 0;
@@ -95,11 +81,11 @@
   }
 }
 
-.secondary-image {
-  background: snow;
+.secondary-image-new {
+  background: #F6F9FB;
 }
 
-.preview-image {
+.preview-image-new {
   display: inline-block;
   margin: 10px 0 10px 10px;
   width: 125px;
@@ -112,27 +98,27 @@
   }
 }
 
-.gallery-holder {
+.gallery-holder-new {
   margin-bottom: 20px;
 }
 
 /*Right Section Styles*/
 
-.section-info {
+.section-info-new {
   display: flex;
   margin-bottom: 20px;
 }
 
-.right-section {
+.right-section-new {
   width: 40%;
   padding: 0 15px;
   box-shadow: 0 0 18px 0 rgba(50, 50, 50, 0.55);
   border-radius: 5px;
-  background: snow;
+  background: #F6F9FB;
   align-self: flex-start;
 }
 
-.builder-icon {
+.builder-icon-new {
   padding-top: 5px;
   transition: .4s all ease-in-out;
   max-width: 454px;
@@ -148,15 +134,15 @@
   }*/
 }
 
-.param-building-inner {
+.param-building-new-inner-new {
   padding: 15px 0 0 0;
   table {
     width: 100%;
   }
 }
 
-.title-cell,
-.value-cell {
+.title-cell-new,
+.value-cell-new {
   width: 50%;
   padding: 8px 0 8px 20px;
   text-align: left;
@@ -169,7 +155,7 @@ th {
 }
 /*===============*/
 
-.param-row {
+.param-row-new {
   border-bottom: 1px dashed rgba(99, 27, 53, .2);
   &:last-child {
     border: none;
@@ -178,15 +164,15 @@ th {
 
 /*Details Build*/
 
-.details-build {
-  background: snow;
+.details-build-new {
+  background: #F6F9FB;
   padding: 10px;
   box-shadow: 0 0 18px 0 rgba(50, 50, 50, 0.55);
   border-radius: 5px;
   flex-grow: 1;
 }
 
-.row-detail {
+.row-detail-new {
   display: flex;
   border-bottom: 1px dashed rgba(99, 27, 53, .2);
   font-size: 14px;
@@ -195,8 +181,8 @@ th {
   }
 }
 
-.left-col-detail,
-.right-col-detail {
+.left-col-detail-new,
+.right-col-detail-new {
   width: 50%;
   padding: 8px 0;
   display: flex;
@@ -207,13 +193,13 @@ th {
   }
 }
 
-.left-col-inner,
-.right-col-inner{
+.left-col-inner-new,
+.right-col-inner-new{
   color: #888;
   margin-top: 5px;
 }
 
-.location {
+.location-new {
   color: $blue;
   &:hover {
     color: $blue;
@@ -221,12 +207,12 @@ th {
   }
 }
 
-.travel-time {
+.travel-time-new {
   span {
     display: inline-block;
   }
 }
-.metro {
+.metro-new {
   svg {
       margin-bottom: -7px;
   }
@@ -239,36 +225,36 @@ th {
 
 /*Section Description*/
 
-.description-section {
+.description-section-new {
   padding: 0 0 0 15px;
   margin-bottom: 20px;
 }
 
-.holder-desc {
-  background: snow;
+.holder-desc-new {
+  background: #F6F9FB;
   box-shadow: 0 0 18px 0 rgba(50, 50, 50, 0.55);
   border-radius: 5px;
   padding: 20px 15px;
 }
 
-.title-desc {
+.title-desc-new {
   font-size: 20px;
   font-weight: 700;
   padding-bottom: 15px;
 }
 
-.description-house {
+.description-house-new {
   p {
     font-size: 15px;
   }
 }
 
-.list-flats {
+.list-flats-new {
   padding: 0 0 0 15px;
   margin-bottom: 100px;
 }
 
-.title-desc {
+.title-desc-new {
   margin-bottom: 20px;
 }
 

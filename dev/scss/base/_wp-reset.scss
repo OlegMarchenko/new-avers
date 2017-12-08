@@ -64,7 +64,7 @@
 
   .next,
   .prev {
-    @extend .btn;
+    @extend .btn-new;
     max-width: 49%;
   }
 }
@@ -80,7 +80,7 @@
 
   .next,
   .prev {
-    @extend .btn;
+    @extend .btn-new;
     max-width: 49%;
     display: flex;
     align-items: center;
@@ -106,8 +106,8 @@
     border: 0;
 
     a {
-      padding: $btn-padding;
-      border: $btn-border;
+      padding: $btn-new-padding;
+      border: $btn-new-border;
     }
   }
 }
@@ -195,7 +195,7 @@
 .wp-caption {
   max-width: 100%;
   clear: both;
-  border: $btn-border;
+  border: $btn-new-border;
   padding: 4px;
   margin-bottom: 20px;
   text-align: center;
@@ -230,7 +230,7 @@ img {
   margin: 0 0 4px 1.2em;
 }
 
-.mejs-container {
+.mejs-container-new {
   margin-bottom: $vertical-rhythm;
 }
 
