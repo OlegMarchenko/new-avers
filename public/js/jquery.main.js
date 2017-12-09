@@ -30,7 +30,7 @@ $(document).ready(function () {
 
     if($('.secondary-image-new').length) {
         $('.secondary-image-new').slick({
-            slidesToShow: 5,
+            slidesToShow: 4,
             arrows: true,
             infinite: true,
             variableWidth: true,
